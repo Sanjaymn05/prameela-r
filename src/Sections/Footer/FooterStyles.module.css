@@ -1,0 +1,15 @@
+.container {
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+    background-color: #333;
+    width: 100%;
+    padding-top: 50px;
+    
+    p {
+      font-size: 16px;
+      color: white;
+    }
+  }

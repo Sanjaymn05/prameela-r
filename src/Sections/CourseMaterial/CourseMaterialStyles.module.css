@@ -1,0 +1,81 @@
+/* Styles for the subject cards (Course Materials) */
+.courseMaterialList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .subjectCard {
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    background-color: var(--project-card-bg); /* Consistent with the project card background */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .subjectCard h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color); /* Same text color as project cards */
+  }
+  
+  .subjectCard:hover {
+    transform: translateY(-10px); /* Hover effect */
+  }
+  
+  /* Initially hide the PDF links */
+  .pdfLinks {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the container horizontally */
+    width: auto; /* Make width auto to fit the content */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .subjectCard:hover .pdfLinks {
+    display: flex;
+  }
+  
+  /* Style for the PDF link buttons */
+  .pdfLinkBtn {
+    background-color: #357edd;
+    color: #fff;
+    border: none; /* Remove the border */
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners */
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 200px; /* Set the width */
+    margin: 0 auto; /* Center the buttons */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Under glow effect */
+  }
+  
+  .pdfLinkBtn:hover {
+    background-color: #2d6bb6;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.2); /* Enhanced under glow on hover */
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .main {
+    height: 100vh;
+    padding-top: 100px;
+  }
+  
